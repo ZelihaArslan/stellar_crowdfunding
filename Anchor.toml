@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+crowdfunding = "GDZV244VQQZZUE7P4BDDZ5FPYROIHIPRT53T2XUZLIIE5FXBC54U446J"
+
+[registry]
+url = "https://stellar.expert/explorer/testnet/account/GAZ6GANUDLGFTWDE5CYP5FHKN4T7S5B4ZM4CYRYC4FAB4HRTKPAB7YO6"
+
+[provider]
+cluster = "devnet"
+wallet = "./id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
